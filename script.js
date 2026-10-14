@@ -94,9 +94,9 @@ const observer = new IntersectionObserver((entries) => {
 // Observe all sections and cards
 document.addEventListener('DOMContentLoaded', () => {
     const elementsToAnimate = document.querySelectorAll(
-        '.about-content, .education-card, .skill-card, .project-card, .testimonial-card, .service-card, .contact-content'
+        '.about-content, .education-card, .skill-card, .project-card,  .service-card, .contact-content'
     );
-    
+    // .testimonial-card,
     elementsToAnimate.forEach(el => {
         el.classList.add('fade-in');
         observer.observe(el);
